@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/list.css">
+</head>
+<%- include ../partials/header.ejs %>
+    <!-- <%= ContactList %> -->
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+        <h1><%= title %></h1>
+        <br>
+        <div>
+            <!-- ------------------------ -->
+            <!-- Fix the ADD button below -->
+            <!-- ------------------------ -->
+            <a href="/contact/add" class="btn btn-primary align-self-end" role="button">
+                <i class="fas fa-plus-circle"></i> 
+                Add a new Contact
+            </a>                
+        </div>
+        <br>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                    <th class="text-center">Contact Name</th>
+                    <th class="text-center">Contact Number</th>
+                    <th class="text-center">Contact Email</th>
+                    <th class="text-center" colspan="3">Actions</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let i = 0; i < ContactList.length; i++) { %>
+                    <tr>
+                        <td class="text-center"><%= ContactList[i].contactName %></td>
+                        <td class="text-center"><%= ContactList[i].contactNumber %></td>
+                        <td class="text-center"><%= ContactList[i].contactEmail %></td>                        
+                        <td class="text-center">
+                            <a href="/contact/details/<%= ContactList[i]._id %>" class="btn btn-success btn-sm"> 
+                            <i class="fas fa-info"></i> </a>
+                        </td>
+                        <td class="text-center">
+                            <!-- ------------------------- -->
+                            <!-- Fix the EDIT button below -->
+                            <!-- ------------------------- -->
+                            <a href="/contact/edit/<%= ContactList[i]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt"></i></a>
+                        </td>
+                        <td class="text-center">
+                            <!-- --------------------------- -->
+                            <!-- Fix the DELETE button below -->
+                            <!-- --------------------------- -->
+                            <a href="/contact/delete/<%= ContactList[i]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+  </main>
+  
+<%- include ../partials/footer.ejs %>

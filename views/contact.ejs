@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/contactMe.css">
+</head>
+<% include partials/header.ejs %>
+
+    <section class="send-message">
+        <h1 class="send-info">Send a
+            <span class="accent-text">Message</span>
+        </h1>
+        <form class="message-form">
+            <div class="user-info">
+                <label>First Name:</label>
+                <input type="text">
+            </div>
+            <div class="user-info">
+                <label>Last Name:</label>
+                <input type="text">
+            </div>
+            <div class="user-info">
+                <label> Contact Number:</label>
+                <input type="tel">
+            </div>
+            <div class="user-info">
+                <label>Email address:</label>
+                <input type="email">
+            </div>
+            <div class="user-info">
+                <label>Enter your message:</label>
+                <input type="text">
+            </div>
+            <div class="user-info">
+                <a href = "/home" class = "btn" role = "button">Submit</a>
+            </div>
+            
+        </form>
+        
+    </section>
+<% include partials/footer.ejs %>

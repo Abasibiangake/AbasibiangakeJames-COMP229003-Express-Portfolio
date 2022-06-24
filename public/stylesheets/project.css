@@ -1,0 +1,146 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-divider{
+    border-color: rgb(107, 36, 36);
+    border-bottom: none;
+    width: 50%;
+    height: 50%;
+    margin-top: 7rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.service-wrapper{
+    padding: 0 20%;
+    text-align: center;
+    align-content: center;
+}
+
+.project-wrapper{
+    padding: 0 10%;
+    text-align: justify;
+    /* align-content: center; */
+}
+
+.service-name{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.2;
+    text-align: center;
+
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+}
+
+.service-section{
+    background:-webkit-linear-gradient(rgba(255, 0, 0, 0.381),rgb(165, 95, 42));    
+    padding: 1rem 2rem;
+    margin-bottom: 0.6rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    width: 600px;
+    margin-top: 3rem;
+}
+
+.service-image{
+    width: 30%;
+    
+}
+
+.services-stack{
+    margin-bottom: 0;
+    text-decoration:underline;
+    padding-top: 2rem;
+}
+.service-language{
+    line-height: normal;
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+
+}
+.service-divider{
+    display:flex;
+    align-items: stretch;
+    flex-grow: 1;
+    margin-top: 0.5rem;
+}
+
+/* .project-dividerOne{
+    display:flex;
+    align-items: stretch;
+    flex-grow: 1;
+    margin-top: 3rem;
+    
+} */
+
+.image-to-project{
+    display:flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-grow: 1; 
+    border-radius: 2rem;
+    background:-webkit-linear-gradient(rgba(255, 0, 0, 0.381),rgb(165, 95, 42));  
+}
+
+.project-dividerTwo{
+    display:flex;
+    align-items: stretch;
+    flex-grow: 1;
+    margin-top: 3rem;
+    height: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;        
+}
+
+.project-section{
+    background:-webkit-linear-gradient(rgba(255, 0, 0, 0.381),rgb(165, 95, 42));
+    align-items: stretch;
+    flex-grow: 1;
+    padding: 3rem 4rem;
+    margin-bottom: 0.6rem;
+    width: 600px;
+    font-size: large;
+    flex-direction: row;
+}
+
+.project-dividerTwo .img-wrapper{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    margin-left: 1rem;
+    height: inherit;
+}
+
+.project-dividerTwo .img-wrapperTwo{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    height: inherit;
+    padding-right: 0;
+    margin-right: 0;
+    background-color:rgb(192, 61, 61) ;
+}
+
+.project-name{
+    font-weight:bolder;
+    font-size: 2rem;
+    color: white;
+}
+
+.accent-text{
+    /* font-family:cursive; */
+    font-weight:bolder;
+    font-size: 2rem;
+    color: rgb(107, 36, 36);
+}

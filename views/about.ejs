@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/about.css">
+</head>
+<% include partials/header.ejs %>
+
+    <section class = "about-main-section">
+        <div class="img-wrapper">
+            <a class="my-image" href="#">
+                <img src="images\My-image.jpg" alt="Image" style="width: 30pc; height: 30pc; border-radius: 1rem;">
+            </a>
+            <!-- <div class="my-image"></div> -->
+        </div>
+        <div class = "description-text">
+            <h1 class="title">Personal Profile</h1>
+            <span class="content"> A hardworking and self-motivated graduate of Mechatronics Engineering (Robotics and Software Engineering). 
+                An avid learner who is also highly knowledgeable in the design and manufacturing of robotic devices from scratch. 
+                Able to analyse a problem and provide autonomous solutions (Software engineering). Goes the extra mile to achieve the best result. 
+                Proficient in robotics and computer vision in object identification and classification. Prolific with using Python Language.</span>
+            <h1 class="title">Education</h1>
+            <span class="content">
+                <p >Advanced Diploma, Software Engineering Technology, Centennial College (2022).</p>
+                <p >B.Eng, Mechatronics and Robotic Engineering, University of Leeds (2020).</p></li>
+                <p >Foundation Programme in Westerfield College (2017).</p>
+            </span>
+            <a href = "Resume/CV for Abasibiangake E. James.pdf" class = "btn" role = "button">Click on Resume</a>
+        </div>
+    </section>
+<% include partials/footer.ejs %>
