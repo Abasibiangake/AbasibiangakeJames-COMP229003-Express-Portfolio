@@ -54,7 +54,7 @@ module.exports.displayAddPage = (req, res, next) => {
     res.render('contact/add_edit', {
         title: "Add a new Contact",
         contact: newContact,
-        // userName: req.user ? req.user.username : ''
+        userName: req.user ? req.user.username : ''
     });       
 }
 
@@ -101,7 +101,7 @@ module.exports.displayEditPage = (req, res, next) => {
             res.render('contact/add_edit', {
                 title: 'Edit Contact',
                 contact: contactToEdit,
-                // userName: req.user ? req.user.username : ''
+                userName: req.user ? req.user.username : ''
             })
         }
     });

@@ -17,7 +17,7 @@
               <% } else { %>
                   <a class="nav-link" href="/">
               <% } %>            
-                  <i class="fas fa-home"></i> Home </a>
+                  <i class="fas fa-home fa-spin"></i> Home </a>
               </a>
             </li>
 
@@ -27,7 +27,7 @@
                 <% } else { %>
                     <a class="nav-link" href="/about">
                 <% } %>            
-                    <i class="fas fa-home"></i> About </a>
+                  <i class="fas fa-user-secret fa-spin"></i>About </a>        
                 </a>
             </li>
             <li class="nav-item">
@@ -36,7 +36,7 @@
                 <% } else { %>
                     <a class="nav-link" href="/project">
                 <% } %>            
-                    <i class="fas fa-home"></i> Project </a>
+                  <i class="fas fa-project-diagram fa-spin"></i>Project </a>
                 </a>
             </li>
             <li class="nav-item">
@@ -45,15 +45,15 @@
                 <% } else { %>
                     <a class="nav-link" href="/service">
                 <% } %>            
-                    <i class="fas fa-home"></i> Services </a>
+                  <i class="fas fa-chart-line fa-spin"></i> Services </a>
                 </a>
             </li>
              
             <li class="nav-item dropdown">
-              <% if (title == "Car List" || title == "Add a new Car") { %>
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-car"></i> Business Contact</a>
+              <% if (title == "Contact List" || title == "Add a new Contact") { %>
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-address-book fa-spin"></i> Business Contact</a>
               <% } else { %>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-car"></i> Business Contact</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fas fa-address-book fa-spin"></i> Business Contact</a>
               <% } %>       
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/contact/list"><i class="fa fa-list"></i> Contact List</a></li>
@@ -66,14 +66,14 @@
                 <% } else { %>
                     <a class="nav-link" href="/contactMe">
                 <% } %>            
-                    <i class="fas fa-home"></i> Contact Me </a>
+                  <i class="fas fa-paper-plane fa-spin"></i> Contact Me </a>
                 </a>
             </li>            
             <li class="nav-item">  
               <% if (typeof userName == 'string' && userName) { %>
-                <a class="nav-link" href="/users/signout" onclick="return confirm('Are you sure?')"><i class="fa fa-door-open"></i> Sign-Out (<%= userName %>)</a>
+                <a class="nav-link" href="/users/signout" onclick="return confirm('Are you sure?')"><i class="fa fa-door-open fa-spin"></i> Sign-Out (<%= userName %>)</a>
               <% } else { %>
-                <a class="nav-link" href="/users/signin"><i class="fa fa-door-closed"></i> Sign-in</a>
+                <a class="nav-link" href="/users/signin"><i class="fa fa-door-closed fa-spin"></i> Sign-in</a>
               <% } %>            
             </li> 
           </ul>

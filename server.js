@@ -7,7 +7,7 @@
  var app = require('./config/app');
  var debug = require('debug')('comp229.003.m2022:server');
  var http = require('http');
-  const configurePassport = require('./config/passport');
+ const configurePassport = require('./config/passport');
  
  /**
   * Get port from environment and store in Express.
@@ -18,8 +18,7 @@
  
  /**
   * Create HTTP server.
-  */
- 
+  */ 
  var server = http.createServer(app);
  
  /**
