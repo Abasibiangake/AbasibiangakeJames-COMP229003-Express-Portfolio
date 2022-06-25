@@ -2,8 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 let contactController = require('../controllers/contact');
-/* GET list of items */
-router.get('/list', contactController.contactList);
 
 // Helper function for guard purposes
 function requireAuth(req, res, next)
@@ -18,6 +16,9 @@ function requireAuth(req, res, next)
     next();        
 
 }
+
+/* GET list of items */
+router.get('/list', requireAuth, contactController.contactList);
 
 // Route for Details
 router.get('/details/:id', contactController.details);
